@@ -3,5 +3,5 @@ Nodejs common server util catchAsync.
 
 ### Install
 ```
-npm install @esultocom/node-server-util-catchasync
+npm install @digidockage/node-server-util-catchasync
 ```
