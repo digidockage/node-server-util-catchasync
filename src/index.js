@@ -10,7 +10,13 @@
 
 // > > > > > > > > > > > > > > > > > > > > > > > The code
 const catchAsync = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch((err) => next(err));
+  try {
+    Promise
+      .resolve(fn(req, res, next))
+      .catch((err) => next(err));
+  } catch(err) {
+    next(err);
+  }
 };
 
 // > > > > > > > > > > > > > > > > > > > > > > > Module exports

@@ -1,6 +1,6 @@
 {
   "name": "@digidockage/node-server-util-catchasync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodejs common server util catchAsync.",
   "main": "src/index.js",
   "engines": {
